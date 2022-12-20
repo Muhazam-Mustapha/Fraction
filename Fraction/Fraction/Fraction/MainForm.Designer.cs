@@ -30,6 +30,7 @@
         {
             this.MainTab = new System.Windows.Forms.TabControl();
             this.SysTab = new System.Windows.Forms.TabPage();
+            this.NormalizeButton = new System.Windows.Forms.Button();
             this._10DigRadioButton = new System.Windows.Forms.RadioButton();
             this._5DigRadioButton = new System.Windows.Forms.RadioButton();
             this._3DigRadioButton = new System.Windows.Forms.RadioButton();
@@ -46,7 +47,6 @@
             this.DenominatorLabel = new System.Windows.Forms.Label();
             this.NumeratorLabel = new System.Windows.Forms.Label();
             this.WebPage = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
             this.MainTab.SuspendLayout();
             this.SysTab.SuspendLayout();
             this.SuspendLayout();
@@ -63,7 +63,7 @@
             // 
             // SysTab
             // 
-            this.SysTab.Controls.Add(this.button1);
+            this.SysTab.Controls.Add(this.NormalizeButton);
             this.SysTab.Controls.Add(this._10DigRadioButton);
             this.SysTab.Controls.Add(this._5DigRadioButton);
             this.SysTab.Controls.Add(this._3DigRadioButton);
@@ -86,6 +86,16 @@
             this.SysTab.TabIndex = 0;
             this.SysTab.Text = "System View";
             this.SysTab.UseVisualStyleBackColor = true;
+            // 
+            // NormalizeButton
+            // 
+            this.NormalizeButton.Location = new System.Drawing.Point(493, 260);
+            this.NormalizeButton.Name = "NormalizeButton";
+            this.NormalizeButton.Size = new System.Drawing.Size(114, 52);
+            this.NormalizeButton.TabIndex = 15;
+            this.NormalizeButton.Text = "Normalize";
+            this.NormalizeButton.UseVisualStyleBackColor = true;
+            this.NormalizeButton.Click += new System.EventHandler(this.NormalizeButton_Click);
             // 
             // _10DigRadioButton
             // 
@@ -240,16 +250,6 @@
             this.WebPage.Text = "Web View";
             this.WebPage.UseVisualStyleBackColor = true;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(493, 260);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(114, 52);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -287,7 +287,7 @@
         private System.Windows.Forms.RadioButton _10DigRadioButton;
         private System.Windows.Forms.RadioButton _5DigRadioButton;
         private System.Windows.Forms.RadioButton _3DigRadioButton;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button NormalizeButton;
     }
 }
 

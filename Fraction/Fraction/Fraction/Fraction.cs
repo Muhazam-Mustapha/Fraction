@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Fraction
 {
-    class Fraction
+    partial class Fraction
     {
         private int _numerator;
         private int _denominator;
@@ -23,11 +23,6 @@ namespace Fraction
         {
             _numerator = 0;
             _denominator = 1;
-        }
-
-        public double Value()
-        {
-            return ((double)_numerator) / _denominator;
         }
     }
 }

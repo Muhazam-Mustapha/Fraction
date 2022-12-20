@@ -59,9 +59,12 @@ namespace Fraction
                ValueLabel.Text = "";
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void NormalizeButton_Click(object sender, EventArgs e)
         {
+            myFraction.Normalize();
 
+            NumerLabel.Text = myFraction.Numerator.ToString();
+            DenomLabel.Text = myFraction.Denominator.ToString();
         }
     }
 }
